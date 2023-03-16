@@ -15,7 +15,7 @@ describe Solver do
   end
 
   it 'Should raise the exception if the argument is negative' do
-    expect(@solver.factorial(-1)).to 'Please enter a integer greater than 0'
+    expect(@solver.factorial(-1)).to eq 'Please enter a integer greater than 0'
   end
  
 end
