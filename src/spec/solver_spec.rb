@@ -21,4 +21,20 @@ describe Solver do
   it 'should return reverse word hello to olleh' do
     expect(@solver.reverse('hello')).to eq('olleh')
   end
+
+  it 'should return fizz when argument is 3' do
+    expect(@solver.reverse('hello')).to eq('olleh')
+  end
+  it 'should return fizz when argument is 3' do
+    expect(@solver.fizzbuzz(3)).to eq('fizz')
+  end
+  it 'should return buzz when argument is 5' do
+    expect(@solver.fizzbuzz(5)).to eq('buzz')
+  end
+  it 'should return fizzbuzz when argument is 15' do
+    expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+  end
+  it 'should return 7 when argument is 7' do
+    expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+  end
 end
