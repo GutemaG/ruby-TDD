@@ -1,7 +1,7 @@
 require_relative '../solver'
 
 describe Solver do
-   before(:each) do
+  before(:each) do
     @solver = Solver.new
   end
 
@@ -17,5 +17,4 @@ describe Solver do
   it 'Should raise the exception if the argument is negative' do
     expect(@solver.factorial(-1)).to eq 'Please enter a integer greater than 0'
   end
- 
 end
