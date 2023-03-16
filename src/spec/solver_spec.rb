@@ -17,4 +17,8 @@ describe Solver do
   it 'Should raise the exception if the argument is negative' do
     expect(@solver.factorial(-1)).to eq 'Please enter a integer greater than 0'
   end
+
+  it 'should return reverse word hello to olleh' do
+    expect(@solver.reverse('hello')).to eq('olleh')
+  end
 end
